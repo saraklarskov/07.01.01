@@ -35,7 +35,8 @@ header {
 
 .season img,
 .product_list img,
-.product_buy img {
+.product_buy img,
+.product_list_sold_out img {
   width: 100%;
 }
 
@@ -45,6 +46,18 @@ header {
   padding: 10px;
   border: 1px solid #a34949;
   background-color: red;
+}
+
+.product_list_sold_out {
+  opacity: 0.5;
+}
+
+.product_list_sold_out::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 1rem;
 }
 
 @media (min-width: 800px) {
