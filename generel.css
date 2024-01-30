@@ -1,6 +1,6 @@
 body {
   margin: 30px;
-  background-color: bisque;
+  background-color: white;
 }
 
 p {
@@ -86,7 +86,12 @@ article img {
 
   .season,
   .product_buy {
-    gap: 30px;
+    gap: 40px;
+  }
+
+  .season,
+  .product_buy {
+    margin: 80px;
   }
 
   .product_list {
