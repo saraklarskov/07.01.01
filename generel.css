@@ -26,6 +26,10 @@ header {
   justify-content: right; /* Fordeler pladsen mellem elementerne */
 }
 
+header a {
+  font-size: 15px;
+}
+
 .season,
 .product_list {
   display: grid;
@@ -33,11 +37,19 @@ header {
   gap: 20px;
 }
 
+.season article:hover,
+.product_list article:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 .season img,
 .product_list img,
 .product_buy img,
-.product_list_sold_out img {
+.product_list_sold_out img,
+article img {
   width: 100%;
+  border-radius: 20px;
 }
 
 .buy {
@@ -60,15 +72,21 @@ header {
   padding: 1rem;
 }
 
+.subtle,
+.identification,
+.brand {
+  color: grey;
+  font-weight: lighter;
+}
+
 @media (min-width: 800px) {
+  header a {
+    font-size: 20px;
+  }
+
   .season,
   .product_buy {
     gap: 30px;
-  }
-
-  article img {
-    width: 100%;
-    border-radius: 20px;
   }
 
   .product_list {
