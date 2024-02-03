@@ -60,19 +60,6 @@ article img {
   background-color: red;
 }
 
-.product_list_sold_out {
-  opacity: 0.5;
-}
-
-.product_list_sold_out::before {
-  content: "Sold Out";
-  position: absolute;
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  border-top-left-radius: 20px;
-}
-
 .subtle,
 .identification,
 .brand {
@@ -85,45 +72,28 @@ article img {
     font-size: 20px;
   }
 
-  .season,
-  .product_buy {
-    gap: 40px;
-  }
-
-  .season,
-  .product_buy {
-    margin: 80px;
-  }
-
-  .product_list {
+  main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  p {
+    text-align: left;
   }
 
   .product_buy {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
-  .product_buy h1,
-  .product_buy p {
+
+  .product_item {
     text-align: left;
   }
 
-  .forside_fash {
-    font-size: 180px;
-  }
-
   .buy {
-    width: 180px;
-    margin: 0px;
-    padding: 5px;
-    border: 1px solid #a34949;
-    background-color: red;
-  }
-
-  .buy p {
+    margin: 0;
     text-align: center;
   }
 }
