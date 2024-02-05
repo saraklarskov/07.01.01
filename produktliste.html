@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="generel.css">
+    <link rel="stylesheet" href="soldout.css">
+    <link rel="stylesheet" href="produktliste.css">
 </head>
 
 <body>
@@ -19,11 +21,14 @@
     <main></main>
     <template id="smallProductTemplate">
         <article class="smallProduct">
-            <a href="produkt.html" class="img"><img src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp" alt="">
-            </a>
+
+            <a class="read-more" href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp"
+                    alt=""></a>
             <h3></h3>
-            <p class="subtle"></p>
-            <p class="product_price"></p>
+            <p class="subtle"> <span class="span_1"></span> - <span class="span_2"></span></p>
+            <p class="product_price"> <span></span> kr.</p>
+            <img src="" alt="" class="soldOut">
+
         </article>
     </template>
 
