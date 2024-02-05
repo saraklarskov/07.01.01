@@ -72,13 +72,11 @@ article img {
     font-size: 20px;
   }
 
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
+  p {
+    text-align: left;
   }
 
-  p {
+  .product_item {
     text-align: left;
   }
 
@@ -88,12 +86,7 @@ article img {
     gap: 20px;
   }
 
-  .product_item {
-    text-align: left;
-  }
-
-  .buy {
-    margin: 0;
-    text-align: center;
+  .product_buy img {
+    width: 100%;
   }
 }
