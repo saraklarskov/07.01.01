@@ -3,20 +3,23 @@ body {
   background-color: white;
 }
 
-p {
+p,
+button {
   text-align: center;
   font-weight: bolder;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-h1 {
+h1,
+h2,
+h3,
+a {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .forside_fash {
   font-size: 70px;
-  text-align: center;
 }
 
 header {
@@ -49,7 +52,6 @@ header a {
 .product_list_sold_out img,
 article img {
   width: 100%;
-  border-radius: 20px;
 }
 
 .buy {
@@ -63,8 +65,19 @@ article img {
 .subtle,
 .identification,
 .brand {
-  color: grey;
-  font-weight: lighter;
+  color: darkgrey;
+}
+
+article.small_product_soldOut img {
+  opacity: 0.5;
+}
+
+article.small_product_soldOut::before {
+  content: "Sold Out";
+  color: white;
+  position: absolute;
+  background-color: black;
+  padding: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -72,7 +85,8 @@ article img {
     font-size: 20px;
   }
 
-  p {
+  p,
+  h3 {
     text-align: left;
   }
 

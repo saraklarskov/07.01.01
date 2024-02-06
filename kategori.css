@@ -1,0 +1,20 @@
+.list > * {
+  text-decoration: none;
+}
+a {
+  color: black;
+  text-align: left;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  list-style: none;
+  background-color: lightgrey;
+  border: black;
+}
+
+li a {
+  border: black;
+}
