@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="generel.css">
     <link rel="stylesheet" href="soldout.css">
     <link rel="stylesheet" href="produktliste.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html">Forside</a>
-        <a href="kategori.html">Kategori</a>
+        <a href="index.html">Front page</a>
+        <a href="kategori.html">Categories</a>
     </header>
 
     <h1>PRODUKTLISTE</h1>
@@ -22,13 +28,17 @@
     <template id="smallProductTemplate">
         <article class="smallProduct">
 
-            <a class="read-more" href="produkt.html"><img src="https://kea-alt-del.dk/t7/images/webp/1000/1529.webp"
-                    alt=""></a>
+            <a class="read-more" href="produkt.html">
+                <img src="her kommer billede" alt="">
+                <div class="sold_out"></div>
+                <div class="sale"> <span></span> </div>
+            </a>
+
             <h3></h3>
             <p class="subtle"> <span class="span_1"></span> - <span class="span_2"></span></p>
             <p class="product_price"> <span></span> kr.</p>
-            <p class="product_discount">-<span></span> </p>
-            <img src="" alt="" class="soldOut">
+            <p class="product_discount"> </p>
+            <p class="new_price">Nu <span></span> kr.</p>
 
         </article>
     </template>

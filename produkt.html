@@ -7,23 +7,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="generel.css">
     <link rel="stylesheet" href="produkt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="index.html">Forside</a>
-        <a href="kategori.html">Kategori</a>
+        <a href="index.html">Front page</a>
+        <a href="kategori.html">Categories</a>
     </header>
 
     <h1>PRODUKT</h1>
 
     <main>
-        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp" alt="">
+        <img src="billede kommer her" alt="">
 
         <section class="purchaseBox">
             <h3 class="overskrift"></h3>
-            <p><span class="span_1"></span> - <span class="span_2"></span></p>
+            <p class="des"><span class="span_1"></span> - <span class="span_2"></span></p>
+            <p class="gender">Gender: <span></span></p>
+            <p class="product_discount">-<span></span></p>
+
             <p class="product_price"> <span></span> kr.</p>
+            <p class="new_price">Nu <span></span> kr.</p>
+            <div class="dropdown">
+                <button class="dropbtn">Select Size</button>
+                <div class="dropdown-content">
+                    <button>Small</button>
+                    <button>Medium</button>
+                    <button>Large</button>
+                </div>
+            </div>
+            <p class="buy_now">BUY NOW</p>
         </section>
     </main>
     <script src="produkt.js"></script>
