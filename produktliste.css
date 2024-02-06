@@ -4,6 +4,7 @@ main {
   gap: 20px;
 }
 
+
 @media (min-width: 800px) {
   main {
     display: grid;

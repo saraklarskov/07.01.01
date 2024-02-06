@@ -26,6 +26,13 @@ function showProduct(product) {
   copy.querySelector(".subtle .span_2").textContent = product.brandname;
   copy.querySelector(".product_price span").textContent = product.price;
 
+  if (product.discount) {
+    copy.querySelector(".product_discount span").textContent =
+      product.discount + "%";
+  } else {
+    copy.querySelector(".product_discount").remove();
+  }
+
   copy
     .querySelector(".read-more")
     .setAttribute("href", `produkt.html?id=${product.id}`);

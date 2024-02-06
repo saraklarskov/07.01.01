@@ -12,7 +12,19 @@ p {
   text-align: center;
 }
 
-
-
 @media (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  h3,
+  p {
+    text-align: left;
+  }
+
+  img {
+    width: 100%;
+  }
 }
