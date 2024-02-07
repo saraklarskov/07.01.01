@@ -1,6 +1,7 @@
 .list > * {
   text-decoration: none;
 }
+
 a {
   color: black;
   text-align: left;
@@ -12,9 +13,10 @@ ol {
   gap: 20px;
   list-style: none;
   background-color: lightgrey;
-  border: black;
 }
 
-li a {
-  border: black;
+@media (min-width: 800px) {
+  a {
+    font-size: 40px;
+  }
 }
