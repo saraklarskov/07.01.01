@@ -33,51 +33,20 @@ header a {
   font-size: 15px;
 }
 
-.season,
-.product_list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
 .season article:hover,
 .product_list article:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease;
 }
 
-.season img,
-.product_list img,
-.product_buy img,
-.product_list_sold_out img,
-article img {
+img {
   width: 100%;
-}
-
-.buy {
-  width: 180px;
-  margin: 20px auto;
-  padding: 10px;
-  border: 1px solid #a34949;
-  background-color: red;
 }
 
 .subtle,
 .identification,
 .brand {
   color: darkgrey;
-}
-
-article.small_product_soldOut img {
-  opacity: 0.5;
-}
-
-article.small_product_soldOut::before {
-  content: "Sold Out";
-  color: white;
-  position: absolute;
-  background-color: black;
-  padding: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -88,19 +57,5 @@ article.small_product_soldOut::before {
   p,
   h3 {
     text-align: left;
-  }
-
-  .product_item {
-    text-align: left;
-  }
-
-  .product_buy {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .product_buy img {
-    width: 100%;
   }
 }

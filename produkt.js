@@ -30,13 +30,19 @@ function showProduct(product) {
   }
 
   if (product.discount) {
+    document.querySelector(".product_price").classList.add("line-through");
+  }
+
+  if (product.discount) {
     let newPrice = ((100 - product.discount) / 100) * product.price;
-    document.querySelector(".new_price span").textContent = newPrice;
+    document.querySelector(".new_price span").textContent = newPrice.toFixed(2);
   } else {
     document.querySelector(".new_price").remove();
   }
 
-  if (product.category === "Accessories") {
+  if (product.category === "Apparel") {
+    document.querySelector(".dropdown").add;
+  } else {
     document.querySelector(".dropdown").remove();
   }
 
